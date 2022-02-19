@@ -1,3 +1,4 @@
+import React from "react";
 import { forwardRef } from "react";
 import { getCurrentSeason, getNextSeason } from "../utils/seasons";
 
@@ -22,7 +23,11 @@ const Season = () => {
 
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <ModalCurrent season={seasons.current} onToggle={onOpen} />
+      <ModalCurrent
+        season={seasons.current}
+        label="Et après ?"
+        onToggle={onOpen}
+      />
       <Dialog
         open={open}
         TransitionComponent={Transition}
@@ -30,7 +35,11 @@ const Season = () => {
         onClose={onClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <ModalNext season={seasons.next} onToggle={onClose} />
+        <ModalNext
+          season={seasons.next}
+          label="Ok, je vais être patient"
+          onToggle={onClose}
+        />
       </Dialog>
     </Box>
   );

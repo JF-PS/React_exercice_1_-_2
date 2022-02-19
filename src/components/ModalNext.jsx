@@ -1,3 +1,4 @@
+import React from "react";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -6,7 +7,7 @@ import Modal from "./Modal";
 import { getSeasonDays, getSeasonDaysLeft } from "../utils/seasons";
 
 const ModalNext = (props) => {
-  const { season, onToggle } = props;
+  const { season, onToggle, label } = props;
   const { title, picture } = season;
   return (
     <Stack sx={{ maxWidth: 345 }}>
@@ -19,7 +20,7 @@ const ModalNext = (props) => {
         </Typography>
       </Modal>
       <Button variant="outlined" onClick={onToggle}>
-        Ok, je vais être patient
+        {label}
       </Button>
     </Stack>
   );

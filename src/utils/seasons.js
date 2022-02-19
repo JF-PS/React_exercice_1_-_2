@@ -1,29 +1,24 @@
-import { differenceInDays, formatDistanceToNow } from "date-fns";
-import Spring from "../assets/pictures/Spring.png";
-import Summer from "../assets/pictures/Summer.png";
-import Autumn from "../assets/pictures/Autumn.png";
-import Winter from "../assets/pictures/Winter.png";
-import { indexOf } from "lodash";
+import { differenceInDays } from "date-fns";
 
 export const getAllSeasons = () => [
   {
     title: "Spring",
-    picture: Spring,
+    picture: "/Spring.e3f24ad5.png?1645291646771",
     period: { start: { m: 3, d: 20 }, end: { m: 6, d: 20 } },
   },
   {
     title: "Summer",
-    picture: Summer,
+    picture: "/Summer.d9102dc6.png?1645291646771",
     period: { start: { m: 6, d: 21 }, end: { m: 9, d: 22 } },
   },
   {
     title: "Autumn",
-    picture: Autumn,
+    picture: "/Autumn.9b92d16f.png?1645291646771",
     period: { start: { m: 9, d: 23 }, end: { m: 12, d: 20 } },
   },
   {
     title: "Winter",
-    picture: Winter,
+    picture: "/Winter.4beb169b.png?1645291646771",
     period: { start: { m: 12, d: 21 }, end: { m: 3, d: 19 } },
   },
 ];

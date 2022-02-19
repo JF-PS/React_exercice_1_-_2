@@ -1,14 +1,16 @@
+import React from "react";
+import Box from "@mui/material/Box";
 import SeasonPage from "./pages/SeasonPage";
 function App() {
   return (
-    <div
-      style={{
+    <Box
+      sx={{
         width: "100%",
         height: "90vh",
       }}
     >
       <SeasonPage />
-    </div>
+    </Box>
   );
 }
 
